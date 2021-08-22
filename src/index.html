@@ -10,14 +10,19 @@
 <body>
 
     <header class="promo">
-        <div class="container">
-            <section class="header">
 
-                <div class="header__logo-wrapper">
-                    <a href="#" class="header__logo">
-                        <img src="icons/logo_header.svg" alt="logo_hookah">
-                    </a>
-                </div>
+        <div class="promo__smoke">
+            <img src="img/smoke_header.png" alt="дым">
+        </div>
+
+        <div class="container">
+            <div class="promo__wrapper">
+                <a href="#" class="promo__logo">
+                    <img src="icons/logo_header.svg" alt="логотип клуба">
+                </a>
+            </div>
+
+            <section class="header">
 
                 <a href="#" class="header__name">Дым кудрявый</a>
 
@@ -35,36 +40,36 @@
 
                 <nav>
                     <ul class="header__menu">
-                        <li><a href="#">О клубе</a></li>
-                        <li><a href="#">Интерьер</a></li>
-                        <li><a href="#">Меню</a></li>
-                        <li><a href="#">Преимущества</a></li>
-                        <li><a href="#">Новости</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about">О клубе</a></li>
+                        <li><a href="#interior">Интерьер</a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#comfort">Преимущества</a></li>
+                        <li><a href="#news">Новости</a></li>
+                        <li><a href="#footer">Контакты</a></li>
                     </ul>
                 </nav>
             </section>
 
-            <div class="promo__title-wrapper">
-                <h1 class="title title_main">Самый шикарный курительный клуб Урала</h1>
+            <div class="promo__title">
+                <h1 class="title title_white title_main">Самый шикарный курительный клуб Урала</h1>
             </div>
             
             <div class="promo__contacts">
                 <div class="promo__phone">
                     <img src="icons/phone_header.svg" alt="phone">
-                    <a href="tel:+73432989888" class="promo__phone-number">+7 (343) 298-98-88</a>
+                    <a href="tel:+73432989888">+7 (343) 298-98-88</a>
                 </div>
                 <div class="promo__timetable">
                     <img src="icons/clock_header.svg" alt="clock">
-                    <div class="promo__timetable-text">
-                        вс-чт с 16:00 до 00:00
+                    <div class="promo__text">
+                        вс-чт с 16:00 до 00:00<br>
                         пт-сб с 16:00 до 04:00
                     </div>
                 </div>
                 <div class="promo__address">
                     <img src="icons/geotag_header.svg" alt="address">
-                    <address class="promo__address-text">
-                        Екатеринбург,
+                    <address class="promo__text">
+                        Екатеринбург,<br>
                         БЦ Высоцкий, 50 этаж
                     </address>
                 </div>
@@ -73,23 +78,51 @@
     </header>
 
     <main>
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
-                <h2 class="title">Возрождаем традицию</h2>
-                <div class="about__descr">Сигара в достойной компании, оттененная бокалом бренди, всегда была
-                    не только обязательным атрибутом джентльмена, но и данью традициям. Поклонники сигар встречались в курительных клубах, обсуждали последние новости и вершили судьбы мира. Прошло время, и теперь традицию курительных клубов возрождает «Дым кудрявый» в Екатеринбурге.
+                <div class="about__wrapper-out">
+                    <div class="about__wrapper-in">
+                        <h2 class="title">Возрождаем традицию</h2>
+                        <div class="about__descr">Сигара в достойной компании, оттененная бокалом бренди, всегда была
+                            не&nbsp;только обязательным атрибутом джентльмена, но и данью традициям. Поклонники сигар встречались в курительных клубах, обсуждали последние новости и вершили судьбы мира. Прошло время, и теперь традицию курительных клубов возрождает «Дым кудрявый» в Екатеринбурге.
+                        </div>
+                    </div>
+                    <img src="icons/pic_about.svg" alt="Picture" class="about__pic">
                 </div>
-                <img src="icons/pic_about.svg" alt="Picture" class="about__pic">
+                <div class="about__items">
+                    <div class="about__item">
+                        <div class="about__title">Услуги</div>
+                        <div class="about__item-descr">
+                            Серьезная сигарная карта и достойный выбор кальянов – standart, premium или de luxe.
+                            Всегда в наличии элитный алкоголь, который составляет отличную партию сигарам. Всем,
+                            кто за рулем бармен предложит авторский чай.
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__title">Развлечения</div>
+                        <div class="about__item-descr">
+                            В клубе «Дым кудрявый» установлены плазменные панели, на которых можно посмотреть спортивный матч. Также в гостевом зале вы найдете шахматы и шашки, в том числе интересные авторские коллекции.
+                        </div>
+                    </div>
+                    <div class="about__item">
+                        <div class="about__title">Для кого</div>
+                        <div class="about__item-descr">
+                            Курительный клуб №1 «Дым кудрявый» создан для деловых и неформальных встреч.
+                            В отличие от традиционных английских курительных клубов, заведение
+                            в Екатеринбурге ждет и джентльменов, и леди.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="interior">
+        <section class="interior" id="interior">
             <div class="container">
                 <div class="interior__header">
                     <h2 class="title title_white">Интерьер</h2>
                     <div class="interior__slide">
-                        <button type="button" class="swiper-button-prev1"><img src="icons/left.svg" alt="Стрелка влево"></button>
-                        <button type="button" class="swiper-button-next1"><img src="icons/right.svg" alt="Стрелка вправо"></button>
+                        <button type="button" class="swiper-button-prev1"><img src="icons/left.svg" alt="стрелка влево"></button>
+                        <button type="button" class="swiper-button-next1"><img src="icons/right.svg" alt="стрелка вправо"></button>
                     </div>
                 </div>
                 <div class="interior__slider-container swiper-container">
@@ -124,7 +157,7 @@
             </div>
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <div class="container">
                 <h2 class="title">Меню</h2>
                 <img src="icons/pic_menu.svg" alt="Picture" class="menu__pic">
@@ -250,7 +283,7 @@
             </div>
         </section>
 
-        <section class="comfort">
+        <section class="comfort" id="comfort">
             <div class="comfort__text">
                 <div class="container">
                     <h2 class="title title_white">У нас уютно</h2>
@@ -266,7 +299,7 @@
             </div>
         </section>
 
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <div class="news__header">
                     <h2 class="title">Новости</h2>
@@ -338,7 +371,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer__wrapper">
             <img src="img/map.jpg" alt="Наш клуб на карте города" class="footer__map">
             <div class="footer__contacts">

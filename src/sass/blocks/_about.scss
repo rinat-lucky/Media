@@ -1,0 +1,47 @@
+.about {
+    padding-top: 71px;
+    padding-bottom: 65px;
+    color: #2B2D33;
+    &__wrapper-out {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper-in {
+        display: flex;
+        flex-direction: column;
+    }
+    &__descr {
+        margin-top: 36px;
+        width: 612px;
+        font-size: 15px;
+        line-height: 26px;
+    }
+    &__pic {
+        width: 452px;
+        height: 326px;
+    }
+    .title {
+        margin-top: 41px;
+    }
+    &__items {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 28px;
+    }
+    &__item {
+        width: 355px;
+        border-top: 1px solid #BDC4CF;
+        &-descr {
+            font-size: 14px;
+            line-height: 24px;
+            color: #585E67;
+            margin-top: 27px;
+        }
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 25px;
+        margin-top: 37px;
+    }
+}
