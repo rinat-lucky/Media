@@ -1,12 +1,55 @@
-// li 
-// 				margin-bottom: 8px
-// 				position: relative
-// 				&::before
-// 					content: ""
-// 					display: block
-// 					position: absolute
-// 					left: -32px
-// 					top: 3px
-// 					width: 21px
-// 					height: 20px
-// 					background: url("../img/check.png") center (center / cover) no-repeat
+.comfort {
+    padding: 90px 0;
+    height: 659px;
+    background-color: #E3E5EA;
+    background-image: url(../img/bg_comfort.jpg);
+    background-size: 61% 100%;
+    background-repeat: no-repeat;
+    background-position: left;
+    &__text {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        width: 664px;
+        padding: 54px 43px 81px 65px;
+        right: 0;
+        color: #FFFFFF;
+        background-color: #30333B;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__items {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 23px;
+        margin-top: 47px;
+        display: flex;
+        flex-direction: column;
+        li {
+            display: block;
+            position: relative;
+            width: 500px;
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                left: -39px;
+                top: -3px;
+                width: 18px;
+                height: 26px;
+                background-image: url(../icons/mark.svg);
+            }
+        }
+        .item1 {
+            margin-bottom: 38px;
+        }
+        .item2 {
+            margin-bottom: 34px;
+        }
+        .item3 {
+            margin-bottom: 32px;
+        }
+    }
+}

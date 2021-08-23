@@ -38,6 +38,16 @@ body {
     }
 }
 
+button, a, img {
+    display: block;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
+
 @import 'blocks/promo';
 @import 'blocks/about';
 @import 'blocks/interior';

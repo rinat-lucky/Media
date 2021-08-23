@@ -4,9 +4,32 @@
     background-image: url(../img/bg_interior.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    overflow: hidden;
     &__header {
         display: flex;
         justify-content: space-between;
+    }
+    &__slide {
+        display: flex;
+        justify-content: space-between;
+        width: 78px;
+        .swiper-button-prev1, .swiper-button-next1 {
+            background-color: transparent;
+            border: 1px solid #4D515D;
+            outline: none;
+            width: 34px;
+            height: 43px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            stroke: #4D515D; 
+            fill: #4D515D;
+            &:hover {
+                border-color: #D5D9E3;
+                stroke: #D5D9E3; 
+                fill: #D5D9E3;
+            }
+        }
     }
     &__slider-wrapper {
         display: flex;
