@@ -102,6 +102,13 @@
         width: 99px;
         height: 20px;
     }
+    &__social {
+        width: 20px;
+        height: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     svg path:hover {
         fill: #FFFFFF;
     }

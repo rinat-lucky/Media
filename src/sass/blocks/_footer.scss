@@ -9,7 +9,7 @@
         }
     }
     &__contacts {
-        padding: 93px 208px 123px 70px;
+        padding: 90px 208px 120px 70px;
         display: flex;
         flex-direction: column;
         background-color: #E3E5EA;
@@ -39,6 +39,9 @@
             line-height: 25px;
             color: #2B2D33;
             text-decoration: none;
+            &:hover {
+                color: #444853;
+            }
         }
     }
     &__address {

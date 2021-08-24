@@ -1,39 +1,39 @@
 window.addEventListener('DOMContentLoaded', () => {
 
-    // const tabs = document.querySelectorAll('.tabheader__item');
-    // const tabsContent = document.querySelectorAll('.tabcontent');  
-    // const tabsParent = document.querySelector('.tabheader__items');
+    const tabs = document.querySelectorAll('.tabheader__item');
+    const tabsContent = document.querySelectorAll('.tabcontent');  
+    const tabsParent = document.querySelector('.tabheader__items');
 
-    // function hideTabContent() {
-    //     tabsContent.forEach(item => {
-    //         item.style.display = 'none';
-    //     });
+    function hideTabContent() {
+        tabsContent.forEach(item => {
+            item.style.display = 'none';
+        });
 
-    //     tabs.forEach(tab => {
-    //         tab.classList.remove('tabheader__item_active');
-    //     });
-    // }
+        tabs.forEach(tab => {
+            tab.classList.remove('tabheader__item_active');
+        });
+    }
 
-    // function showTabContent(i = 0) {
-    //     tabsContent[i].style.display = 'block';
-    //     tabs[i].classList.add('tabheader__item_active');
-    // }
+    function showTabContent(i = 0) {
+        tabsContent[i].style.display = 'flex';
+        tabs[i].classList.add('tabheader__item_active');
+    }
 
-    // hideTabContent();
-    // showTabContent();
+    hideTabContent();
+    showTabContent();
 
-    // tabsParent.addEventListener('click', (event) => {
-    //     const target = event.target;
+    tabsParent.addEventListener('click', (event) => {
+        const target = event.target;
 
-    //     if (target && target.classList.contains('tabheader__item')) {
-    //         tabs.forEach((item, i) => {
-    //             if (target == item) {
-    //                 hideTabContent();
-    //                 showTabContent(i);
-    //             }
-    //         });
-    //     }
-    // });
+        if (target && target.classList.contains('tabheader__item')) {
+            tabs.forEach((item, i) => {
+                if (target == item) {
+                    hideTabContent();
+                    showTabContent(i);
+                }
+            });
+        }
+    });
 
 
     new Swiper('.interior__slider-container', {
@@ -43,15 +43,8 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         grabCursor: true,
         loop: true,
-
-        breakpoints: {
-            375: {
-                slidesPerView: 1
-            },
-            768: {
-                slidesPerView: 2
-            }
-        }
+        spaceBetween: 30,
+        slidesPerView: 3
     });
 
     new Swiper('.news__slider-container', {
@@ -61,15 +54,7 @@ window.addEventListener('DOMContentLoaded', () => {
         },
         grabCursor: true,
         loop: true,
-        slidesPerView: 3,
-
-        breakpoints: {
-            375: {
-                slidesPerView: 1
-            },
-            768: {
-                slidesPerView: 2
-            }
-        }
+        spaceBetween: 30,
+        slidesPerView: 3
     });
 });
